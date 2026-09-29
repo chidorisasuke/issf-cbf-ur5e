@@ -1,5 +1,114 @@
-*.egg-info/*
-__pycache__
-.python-version
-site/
+# Folder Cache dan Build
+build/
+dist/
+*.egg-info/
+__pycache__/
+
+# File backup (yang berakhiran LAMA)
+*LAMA.py
+*LAMA.urdf
+
+# File hasil output dan eksperimen
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.pkl
+*.json
+*.npz
+experiment/results_*/
+
+# File spesifik OS/Editor
+.DS_Store
 .vscode/
+
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================================================
+# Virtual environments
+# =========================================================
+
+.venv/
+venv/
+env/
+
+# =========================================================
+# Local build / packaging
+# =========================================================
+
+build/
+dist/
+*.egg-info/
+
+# =========================================================
+# OS / editor
+# =========================================================
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================================================
+# LOCAL EXPERIMENT SCRIPTS - OSCBF
+# =========================================================
+
+oscbf/experiment/hil_control_complete*.py
+oscbf/experiment/try_cbf-issf.py
+oscbf/experiment/analyze_svd_over_trajectory.py
+oscbf/experiment/calculate_svd_jacobian.py
+oscbf/experiment/sim_recorder.py
+
+oscbf/experiment/dt_ur5e/
+oscbf/experiment/plot_paper/
+oscbf/experiment/plot_pkl/
+oscbf/experiment/tanpa_ns/
+oscbf/experiment/tiga_data/
+
+# =========================================================
+# LOCAL TEST SCRIPTS - OSISSF
+# =========================================================
+
+osissf/experiment/test_*.py
+
+# =========================================================
+# LOCAL DATA / RESULTS
+# =========================================================
+
+results/
+oscbf/results/
+oscbf/cek_log/
+
+generate_pict/
+svd_analysis_log.csv
+
+paper_result.pdf
+paper_result.png
+
+# =========================================================
+# LOCAL / GENERATED PROJECT FILES
+# =========================================================
+
+oscbf/book/
+oscbf/project/
+
+# =========================================================
+# LOCAL EXTRA SCRIPTS
+# =========================================================
+
+oscbf/examples/franka_multiple_safety_conditions_plot.py
+oscbf/utils/pybullet_visuals.py
+
+# Local assets
+oscbf/assets/pybullet_ur5_robotiq/
+oscbf/assets/table/

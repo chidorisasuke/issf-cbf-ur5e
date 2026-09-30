@@ -2,7 +2,7 @@ import numpy as np
 import pybullet as p
 import pybullet_data
 
-from oscbf.core.ur5e_collision_model import ur5e_collision_data
+from osissf.core.collision import ur5e_collision_data
 
 
 def _draw_box(xyz_min, xyz_max, rgba):
@@ -14,7 +14,7 @@ def _draw_box(xyz_min, xyz_max, rgba):
     xyz_min = [float(v) for v in xyz_min]
     xyz_max = [float(v) for v in xyz_max]
     try:
-        from oscbf.utils.pybullet_visuals import (
+        from osissf.visualization.pybullet_visuals import (
             create_3d_box_visualization,
         )
         return create_3d_box_visualization(p, xyz_min, xyz_max, rgba)

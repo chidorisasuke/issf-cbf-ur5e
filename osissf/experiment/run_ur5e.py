@@ -46,7 +46,7 @@ from osissf.core.safety import (
     BothVelocityConfig,
 )
 from oscbf.core.manipulator import Manipulator
-from oscbf.core.ur5e_collision_model import (
+from osissf.core.collision import (
     ur5e_collision_data,
 )
 # ==============================================================
@@ -73,7 +73,7 @@ from osissf.trajectory.trajectories import (
 # ==============================================================
 # LOGGING
 # ==============================================================
-from osissf.logging.experiment_log import (
+from osissf.datalog.experiment_log import (
     ExperimentLogger,
 )
 # ==============================================================

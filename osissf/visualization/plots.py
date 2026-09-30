@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-from osissf.logging.metrics import (
+from osissf.datalog.metrics import (
     compute_tracking_metrics,
     compute_cbf_metrics,
     compute_digital_twin_metrics,

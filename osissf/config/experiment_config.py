@@ -1,11 +1,14 @@
 from dataclasses import dataclass, field
 import argparse
 import numpy as np
+from pathlib import Path
+import oscbf
 
 Q_HOME = np.array(
     [0.0, -1.57, 1.57, -1.57, -1.57, 0.0],
     dtype=float,
 )
+UR5E_URDF = Path(oscbf.__file__).parent / "assets" / "ur5e" / "ur5e_physics.urdf"
 
 @dataclass
 class ExperimentConfig:
@@ -41,7 +44,7 @@ class ExperimentConfig:
     # ROBOT / MODEL
     # ==========================================================
 
-    urdf_path: str = "assets/ur5e/ur5e_physics.urdf"
+    urdf_path: str = UR5E_URDF
     ee_link_pinocchio: str = "wrist_3_link"
 
     # ==========================================================
